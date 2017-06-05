@@ -8,4 +8,4 @@ if [ "$#" -ne 2 ];then
 fi
 OS=$1
 RPM=$2
-docker run -ti -v $(pwd)/rpmbuild:/root/rpmbuild:Z rpmbuild:${OS} ${RPM}
+docker run -ti -v ${GOPATH}:/usr/src/go -v $(pwd)/rpmbuild:/root/rpmbuild:Z rpmbuild:${OS} ${RPM}

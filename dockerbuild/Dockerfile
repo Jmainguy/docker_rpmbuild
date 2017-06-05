@@ -6,7 +6,7 @@ RUN yum install -y rpm-build make gcc \
     libtool libgcrypt-devel zlib-devel \
     libcurl-devel ncurses-devel cmake \
     libevent-devel tar python2-devel \
-    python-setuptools && \
+    python-setuptools golang && \
     mkdir -p /root/rpmbuild/SPECS
 WORKDIR /root/rpmbuild/SPECS
 ENTRYPOINT ["/root/rpmbuild/SPECS/spec.sh"]
