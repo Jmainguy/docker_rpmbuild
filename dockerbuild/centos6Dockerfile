@@ -1,4 +1,5 @@
 FROM centos:centos6
+LABEL version="05242018"
 MAINTAINER Jonathan Mainguy jon@soh.re
 RUN yum install -y epel-release && \
     yum install -y rpm-build make gcc \
